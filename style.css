@@ -12,7 +12,7 @@
     --font-Weights-s: 400;
     --font-Weights-b: 700;
     --font-paragraph: 16px;
-    --tomato : hsl(4, 100%, 67%);
+    --tomato: hsl(4, 100%, 67%);
     --font-family: 'Roboto', sans-serif;
 }
 
@@ -26,53 +26,106 @@ body {
     background: var(--Dark-Slate-Grey);
 
 }
+
 #newsletter {
     background: var(--White);
     width: 60%;
-    height: 50%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 50px;
-    flex-direction: row;
     border-radius: 20px;
-    padding: 30px 4px 10px 50px;
+    padding: 20px 20px 20px 50px;
 }
+
 #newsletter .info {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
+
 #newsletter .info h1 {
-    font-size:40px;
-    color:var(--Charcoal-Grey);
-    font-weight:var(--font-Weights-b);
+    font-size: 45px;
+    color: var(--Charcoal-Grey);
+    font-weight: var(--font-Weights-b);
     margin: 50px 0px 15px 0px;
 }
+
 #newsletter .info .disription {
-    margin: 10px 0px 10px 0px;
-        font-size: 16px;
-            color: var(--Grey);
+    margin: 10px 0px 20px 0px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--Grey);
 }
- .futues {
+
+.futues {
     display: grid;
     grid-template-columns: 1fr;
     /* gap: 20px; */
 }
- .futues .futues-info {
+
+.futues .futues-info {
     padding: 8px 0px;
- }
- .futues .futues-info img {
+}
+
+.futues .futues-info img {
     float: left;
- }
- .futues .futues-info p {
+}
+
+.futues .futues-info p {
     padding-left: 35px;
+    margin-bottom: 3px;
     font-size: 16px;
-    color:var(--Grey);
- }
-#newsletter .form  {
+    color: var(--Grey);
+}
+
+#newsletter #form-meassge {
     display: flex;
     flex-direction: column;
- }
+    margin-top: 40px;
+    position: relative;
+}
+
+#newsletter #form-meassge #email {
+    margin-bottom: 10px;
+}
+
+/* #newsletter #form-meassge #email:focus {
+    background: none;
+    border: none;
+
+
+} */
+#email:focus {
+    outline: none !important;
+    border: 1px solid var(--tomato)!important;
+    background: hsl(5, 76%, 90%) !important;
+}
+
+#newsletter #form-meassge input {
+    background: none;
+    padding: 15px 20px;
+    border: 1px solid var(--Charcoal-Grey);
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: cell;
+}
+
+#email-arror {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 13px;
+    color: var(--tomato);
+
+}
+
+#newsletter #form-meassge #subscribe {
+    background-color: var(--Dark-Slate-Grey);
+    color: var(--White);
+}
+
 #newsletter .futues-image img {
-width: 100%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
