@@ -35,12 +35,15 @@ body {
     gap: 50px;
     border-radius: 20px;
     padding: 20px 20px 20px 50px;
+    transition: all cubic-bezier(0.47, 0, 0.745, 0.715);
+    
 }
 
 #newsletter .info {
     display: flex;
     flex-direction: column;
     width: 100%;
+    
 }
 
 #newsletter .info h1 {
@@ -60,6 +63,7 @@ body {
 .futues {
     display: grid;
     grid-template-columns: 1fr;
+
     /* gap: 20px; */
 }
 
@@ -83,6 +87,7 @@ body {
     flex-direction: column;
     margin-top: 40px;
     position: relative;
+
 }
 
 #newsletter #form-meassge #email {
@@ -97,17 +102,17 @@ body {
 } */
 #email:focus {
     outline: none !important;
-    border: 1px solid var(--tomato)!important;
-    background: hsl(5, 76%, 90%) !important;
+    /* border: 1px solid var(--tomato)!important;
+    background: hsl(5, 76%, 90%) !important; */
 }
 
 #newsletter #form-meassge input {
-    background: none;
+    background: #fff;
     padding: 15px 20px;
     border: 1px solid var(--Charcoal-Grey);
     margin-top: 10px;
     border-radius: 5px;
-    cursor: cell;
+    cursor: pointer;
 }
 
 #email-arror {
@@ -128,4 +133,50 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* show  recition after click the subscribe */
+
+.result {
+    background: var(--White);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 5; */
+    border-radius: 20px;
+    padding: 60px;
+        transition: all cubic-bezier(0.47, 0, 0.745, 0.715);
+        display: none;
+
+}
+
+.result .logo img {
+    width: 50px;
+}
+
+.result .title h2 {
+    font-size: 45px;
+    color: var(--Charcoal-Grey);
+    font-weight: var(--font-Weights-b);
+    margin: 50px 0px 15px 0px;
+    max-width: 90%;
+}
+
+.result p {
+    margin-bottom: 3px;
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--Grey);
+}
+
+.result .send-infirmation button {
+    background-color: var(--Dark-Slate-Grey);
+    color: var(--White);
+    padding: 15px 20px;
+    border: 1px solid var(--Charcoal-Grey);
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+
 }
