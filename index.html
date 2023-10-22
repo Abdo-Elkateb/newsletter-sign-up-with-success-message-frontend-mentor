@@ -53,22 +53,21 @@
           </div>
         </div>
 
-        <form id="form-meassge" action="#">
+        <form action="#" id="form-meassge" name="Form">
           <label for="email" id=""> Email address</label>
           <input
             type="text"
             for="email"
+            name="answer_a"
             id="email"
+            onkeypress="checkEmail()"
             placeholder="email@company.com"
-            onkeyup="checkMessage()"
           />
           <input
             type="submit"
             value="Subscribe to monthly newsletter"
             for="subscribe"
             id="subscribe"
-            onclick="sendForm()"
-         
           />
           <p id="email-arror"></p>
         </form>

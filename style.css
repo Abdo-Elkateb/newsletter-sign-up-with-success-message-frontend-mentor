@@ -56,7 +56,7 @@ body {
 #newsletter .info .disription {
     margin: 10px 0px 20px 0px;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
     color: var(--Grey);
 }
 
@@ -85,7 +85,8 @@ body {
 #newsletter #form-meassge {
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: auto;
+    margin-bottom: 40px;
     position: relative;
 
 }
@@ -94,25 +95,19 @@ body {
     margin-bottom: 10px;
 }
 
-/* #newsletter #form-meassge #email:focus {
-    background: none;
-    border: none;
-
-
-} */
 #email:focus {
     outline: none !important;
-    /* border: 1px solid var(--tomato)!important;
-    background: hsl(5, 76%, 90%) !important; */
+
 }
 
 #newsletter #form-meassge input {
     background: #fff;
     padding: 15px 20px;
-    border: 1px solid var(--Charcoal-Grey);
+    border:1px solid var(--Grey);
+    color:var(--Grey);
     margin-top: 10px;
     border-radius: 5px;
-    cursor: pointer;
+    cursor:cell;
 }
 
 #email-arror {
@@ -127,6 +122,8 @@ body {
 #newsletter #form-meassge #subscribe {
     background-color: var(--Dark-Slate-Grey);
     color: var(--White);
+    border:none ;
+    cursor: pointer;
 }
 
 #newsletter .futues-image img {
