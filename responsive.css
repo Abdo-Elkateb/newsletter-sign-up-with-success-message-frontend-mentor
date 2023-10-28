@@ -1,0 +1,132 @@
+/* - Mobile: 375px - Desktop: 1440px */
+
+@media screen and (max-width: 1200px) {
+
+    #newsletter .info h1 {
+        font-size: 40px;
+    }
+
+    #newsletter p {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #newsletter .info {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px !important;
+    }
+
+    #newsletter .info h1 {
+        font-size: 37px;
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+
+    #newsletter p {
+        width: 90%;
+    }
+
+    #newsletter #form-meassge {
+        margin-top: 25px;
+        position: relative;
+
+    }
+
+    #newsletter #form-meassge input {
+        background: #fff;
+        padding: 17px;
+        margin-top: 5px;
+        width: 95%;
+    }
+
+    #newsletter #form-meassge #subscribe {
+        background-color: var(--Dark-Slate-Grey);
+        margin-top: 10px;
+        color: var(--White);
+        border: none;
+        cursor: pointer;
+    }
+
+    .result {
+        background: var(--White);
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        /* gap: 5; */
+        border-radius: 20px;
+        padding: 60px;
+        transition: all cubic-bezier(0.47, 0, 0.745, 0.715);
+        display: none;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+
+        height: auto;
+
+    }
+
+    #newsletter {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .features-image{
+        background-image: url(images/illustration-sign-up-mobile.svg);
+        width: 100%;
+        max-width: 100%;
+        height: 400px;
+        max-height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-height: 100%;
+        object-fit: cover;
+    }
+
+    #newsletter .info {
+        margin: auto;
+        width: 85%;
+    }
+
+    #email-arror {
+        position: absolute;
+        right: -50% !important;
+        top: 0;
+        font-size: 13px;
+        color: var(--tomato);
+    }
+    .result {
+        background: var(--White);
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        padding: 60px;
+        transition: all cubic-bezier(0.47, 0, 0.745, 0.715);
+        display: none;
+
+    }
+
+    .result .title h2 {
+        font-size: 40px;
+        max-width: 100%;
+    }
+
+    .result p {
+        font-size: 15px;
+
+    }
+
+
+}

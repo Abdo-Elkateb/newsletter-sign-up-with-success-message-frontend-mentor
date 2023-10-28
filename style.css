@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 :root {
     --Dark-Slate-Grey: hsl(234, 29%, 20%);
     --Charcoal-Grey: hsl(235, 18%, 26%);
@@ -28,29 +29,32 @@ body {
 }
 
 #newsletter {
-    background: var(--White);
-    width: 60%;
+    background-color: var(--White);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
     border-radius: 20px;
-    padding: 20px 20px 20px 50px;
-    transition: all cubic-bezier(0.47, 0, 0.745, 0.715);
-    
+    gap: 10px;
+    overflow: hidden;
+    padding: 20px;
+
 }
 
 #newsletter .info {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    
+    padding-left: 50px;
 }
 
 #newsletter .info h1 {
-    font-size: 45px;
+    font-size: 50px;
     color: var(--Charcoal-Grey);
     font-weight: var(--font-Weights-b);
-    margin: 50px 0px 15px 0px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+#newsletter p {
+    width: 90%;
 }
 
 #newsletter .info .disription {
@@ -60,22 +64,20 @@ body {
     color: var(--Grey);
 }
 
-.futues {
+.features {
     display: grid;
     grid-template-columns: 1fr;
-
-    /* gap: 20px; */
 }
 
-.futues .futues-info {
+.features .features-info {
     padding: 8px 0px;
 }
 
-.futues .futues-info img {
+.features .features-info img {
     float: left;
 }
 
-.futues .futues-info p {
+.features .features-info p {
     padding-left: 35px;
     margin-bottom: 3px;
     font-size: 16px;
@@ -85,8 +87,7 @@ body {
 #newsletter #form-meassge {
     display: flex;
     flex-direction: column;
-    margin-top: auto;
-    margin-bottom: 40px;
+    margin-top: 40px;
     position: relative;
 
 }
@@ -102,17 +103,18 @@ body {
 
 #newsletter #form-meassge input {
     background: #fff;
-    padding: 15px 20px;
-    border:1px solid var(--Grey);
-    color:var(--Grey);
+    padding: 20px 20px;
+    border: 1px solid var(--Grey);
+    color: var(--Grey);
     margin-top: 10px;
+    width: 85%;
     border-radius: 5px;
-    cursor:cell;
+    cursor: cell;
 }
 
 #email-arror {
     position: absolute;
-    right: 0;
+    right: -49%;
     top: 0;
     font-size: 13px;
     color: var(--tomato);
@@ -121,29 +123,38 @@ body {
 
 #newsletter #form-meassge #subscribe {
     background-color: var(--Dark-Slate-Grey);
+    margin-top: 20px;
     color: var(--White);
-    border:none ;
+    border: none;
     cursor: pointer;
+    margin-bottom: 30px;
 }
 
-#newsletter .futues-image img {
+.features-image {
+    background-image: url(images/illustration-sign-up-desktop.svg);
     width: 100%;
+    max-width: 100%;
     height: 100%;
-    object-fit: cover;
+    max-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 100%;
+    object-fit: contain;
+
 }
 
-/* show  recition after click the subscribe */
+/* show  result after click the subscribe */
 
 .result {
     background: var(--White);
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     /* gap: 5; */
     border-radius: 20px;
     padding: 60px;
-        transition: all cubic-bezier(0.47, 0, 0.745, 0.715);
-        display: none;
+    transition: all cubic-bezier(0.47, 0, 0.745, 0.715);
+    display: none;
 
 }
 
@@ -175,5 +186,14 @@ body {
     border-radius: 5px;
     width: 100%;
     cursor: pointer;
+
+}
+
+.after {
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }

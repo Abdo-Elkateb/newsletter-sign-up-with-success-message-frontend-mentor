@@ -1,10 +1,11 @@
 // js 
-// let email = document.getElementById('email')
+
+// بسم الله الرحمن الرحيم
+
 let email = document.forms["Form"]["answer_a"];
 let emailArror = document.getElementById('email-arror');
 let newsletter = document.getElementById('newsletter');
 let body = document.getElementById('body');
-
 let result = document.getElementById('result');
 let subscribe = document.getElementById('subscribe')
 
@@ -12,7 +13,6 @@ let subscribe = document.getElementById('subscribe')
 
 // this function check email 
 function checkEmail() {
-
 
     if (email.value.match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
         // if the input was a right email,  you will get this style
@@ -43,7 +43,8 @@ function sendForm() {
 
 //  here we can click  👍
 function subscribeClick() {
-    subscribe.addEventListener('click', function () {
+    subscribe.addEventListener('click', function (e) {
+        e.preventDefault()
         //  here we call funtion 
         if (checkEmail() === true) {
             sendForm()
@@ -51,10 +52,7 @@ function subscribeClick() {
         } else {
             emailArror.innerHTML = "write your email"
             rest() 
-    
         }
-
-
     })
 
 }
